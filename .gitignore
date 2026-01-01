@@ -1,0 +1,27 @@
+# env
+.env
+
+# caches
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+unsloth_compiled_cache/
+
+# runs / checkpoints / model artifacts
+runs/**/checkpoint-*/
+runs/**/trainer_state.json
+runs/**/optimizer.pt
+runs/**/scheduler.pt
+runs/**/rng_state.pth
+runs/**/adapter/*.safetensors
+runs/**/adapter/*model*.safetensors
+runs/**/adapter_model.safetensors
+*.safetensors
+*.bin
+
+# large datasets / raw data
+data/raw/
+data/processed/evol_code_chatml.jsonl
+
+# optional: logs
+*.log

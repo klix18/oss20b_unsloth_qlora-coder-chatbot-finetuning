@@ -1,0 +1,34 @@
+{
+  "run_name": "evol_code_chatml_5k_Qwen2.5-Coder-14B-Instruct_qlora_20251229_204343",
+  "run_dir": "runs/evol_code_chatml_5k_Qwen2.5-Coder-14B-Instruct_qlora_20251229_204343",
+  "model_name_or_path": "Qwen/Qwen2.5-Coder-14B-Instruct",
+  "dataset_path": "data/processed/evol_code_chatml_5k.jsonl",
+  "seq_len": 2048,
+  "eval_ratio": 0.02,
+  "seed": 42,
+  "use_4bit": true,
+  "lora": {
+    "r": 16,
+    "alpha": 32,
+    "dropout": 0.0,
+    "target_modules": null
+  },
+  "training": {
+    "per_device_train_batch_size": 1,
+    "gradient_accumulation_steps": 16,
+    "num_train_epochs": 1.0,
+    "learning_rate": 0.0002,
+    "lr_scheduler_type": "cosine",
+    "warmup_ratio": 0.03,
+    "weight_decay": 0.0,
+    "logging_steps": 10,
+    "save_steps": 50,
+    "eval_steps": 50
+  },
+  "final": {
+    "global_step": 307,
+    "train_runtime_sec": 6443.8024,
+    "train_loss": 0.43432147339811544
+  },
+  "timestamp": "20251229_223156"
+}
